@@ -2,18 +2,11 @@ body{
     background-color: black ;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
-    
-}
-.navbar-brand{
-    color:rgb(120, 0, 233);
-}
-.nav-item a{
-    color: rgb(120, 0, 233);
 }
 .line{
     width: 0px;
     height: 2px;
-    background-color: rgb(120, 0, 233);
+    background-color: #000000;
     visibility: hidden;
     transition: all 0.5s ease;
 }
@@ -21,25 +14,15 @@ a:hover + .line {
     width:100%;
     visibility: visible;
 }
-.menu-toggle {
-    display: none;
-}
-
 @media screen and (max-width: 992px) {
-    .menu-toggle{
-        display: block;
-    } 
-    .collapse{
-        position: absolute;
-        right: 0px;
-        top: 0px;
-        width: 100%;
-        display: none;
-        background-color: rgb(136, 32, 255);
+    .navbar-toggler {
+    display: block;
+    z-index: 999;
+    cursor: pointer;
     }
-
- 
-
-
-
+    .nav-item{
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    
 }
