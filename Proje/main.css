@@ -1,5 +1,5 @@
 body{
-    background-color: black ;
+    background-color: rgb(255, 255, 255) ;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
 }
@@ -14,14 +14,11 @@ a:hover + .line {
     width:100%;
     visibility: visible;
 }
-@media screen and (max-width: 992px) {
-    .navbar-toggler {
-    display: block;
-    
-    }
-    .nav-item{
-        margin-top: 20px;
-        font-size: 18px;
-    }
-    
+
+#hero{
+    background-image: linear-gradient(rgba(0,0,0, .4),rgba(0,0,0, .4), url('../Proje/1/2.jpg'));
+    background-size: cover;
 }
+#hero.container{
+    height: 50vh;
+}   
