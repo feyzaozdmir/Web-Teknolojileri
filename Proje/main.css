@@ -17,8 +17,7 @@ a:hover + .line {
 @media screen and (max-width: 992px) {
     .navbar-toggler {
     display: block;
-    z-index: 999;
-    cursor: pointer;
+    
     }
     .nav-item{
         margin-top: 20px;
