@@ -1,0 +1,147 @@
+html{
+    scroll-behavior: smooth;
+}
+.navbar-brand {
+    text-shadow: 2px 2px 5px rgb(0, 217, 255);
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color:rgba(31, 80, 38, 0.815);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    color: aliceblue;
+    
+}
+.line{
+    width: 0px;
+    height: 3px;
+    background-color: #000000;
+    visibility: hidden;
+    transition: all 0.5s ease;
+}
+a:hover + .line {
+    width:100%;
+    visibility: visible;
+}
+
+.header-background{
+    position: static;
+    display: block;
+    overflow: visible;
+    top: 0;
+    height: auto;
+    min-height: 750px;  
+    padding-bottom: 70px;
+
+    background-image: -webkit-gradient(linear, left top, left bottom), from( rgba(0,0,0, .7));
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, .7),rgba(0, 0, 0, .7)), url(1/2.jpg);
+    background-size: auto, cover;
+    flex-direction: column;
+    white-space: normal;
+    background-position:0px 0px, 100% 50% ;
+    object-fit: normal;
+    -o-object-fit: normal;
+    -ms-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+}
+.sticky-nav{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    padding: 20px;
+    z-index: 1;
+    -webkit-align-self: auto;
+    
+    -ms-flex-item-align: auto;
+    -ms-grid-row-align: auto;
+    align-self: auto;
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order:0;
+    
+}
+.navbar-toggler{
+    border: none;
+    padding: 10px 6px;
+    outline: none;
+}
+.btn{
+    background-color: rgba(68, 131, 76, 0.3);
+    color:aliceblue;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 4px 4.5px;
+    
+}
+.btn:hover{
+    background-color: rgba(68, 131, 76, 0.9);
+    color: aliceblue;
+}   
+.heading {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1.4;
+    text-align: center;
+    color: aliceblue;
+    margin-top: 180px;
+    margin-bottom: 8px;
+    min-height: 100px;
+}
+.column-left{
+    min-height: 750px;
+    background-image: -webkit-gradient(linear, left top, left bottom), from( rgba(62, 90, 66, 0.9));
+    background-image: linear-gradient(180deg, rgba(62, 90, 66, 0.54),rgba(62, 78, 64, 0.25)), url(1/3.jpg);
+    background-position:0px 0px, 100% 50% ;
+    background-size: auto, cover;
+    background-attachment: scroll,scroll;
+    object-fit: cover;
+    -o-object-fit: cover;
+}
+.column-rigt .section-title{
+    margin-top: 80px;
+    padding: 5rem 2rem 0rem 5rem;
+    font-size: 2.8rem;
+    color: aliceblue;
+    font-weight: 500;
+}
+.coloumn-right .paragraph{
+    margin-top: 15px;
+    padding: 1rem 5rem 1rem 5rem ;
+    font-size: 1.1rem;
+    color: aliceblue;
+    line-height: 1.4;
+    text-align: justify;
+}
+.column-rigt .cv-title{
+    background-color: rgba(68, 131, 76, 0.3);
+    color:aliceblue;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 30px;
+    padding: 1rem 5rem 1rem 5rem;
+    font-size: 2rem;
+}
+.my-interets{
+    min-height: 750px;
+    background-image: -webkit-gradient(linear, left top, left bottom), from( rgba(62, 90, 66, 0.9));
+    background-image: linear-gradient(180deg, rgba(62, 90, 66, 0.54),rgba(62, 78, 64, 0.25)), url(1/11.jpg);
+    background-position:0px 0px, 100% 50% ;
+    background-size: auto, cover;
+    background-attachment: scroll,scroll;
+    object-fit: cover;
+    -o-object-fit: cover;
+}
+.interets-section{
+    margin-top: 70px;
+    padding: 5rem 2rem 0rem 5rem;
+    font-size: 2.8rem;
+    color: aliceblue;
+    font-weight: 500;
+}
+
+
