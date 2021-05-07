@@ -31,7 +31,7 @@
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
-                        
+
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
@@ -40,7 +40,7 @@
                                 <div class="line"></div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Hakkımda</a>
+                                <a class="nav-link" href="#about">Hakkımda</a>
                                 <div class="line"></div>
                             </li>
                             <li class="nav-item">
@@ -56,7 +56,7 @@
                                 <div class="line"></div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">İletişim</a>
+                                <a class="nav-link" href="#contact">İletişim</a>
                                 <div class="line"></div>
                             </li>
                             <li>
@@ -77,50 +77,153 @@
             <div class="col-xs-12 col-sm-6 col-lg-6 column-left">
 
             </div>
-            <div class="col-xs-12 col-sm-6 col-lg-6 column-rigt">
+            <div class="col-xs-12 col-sm-6 col-lg-6 column-right">
                 <h1 class="section-title">Hakkımda</h1>
                 <p class="paragraph">
-                    Merhaba ben Feyza Nur Özdemir. 1 Ocak 2000 tarihinde Bursa'da 
-                    Osmangazi ilçesinde doğdum. Küçük bir aileyiz. Annem ev hanımı babam da 
+                    Merhaba ben Feyza Nur Özdemir. 1 Ocak 2000 tarihinde Bursa'da
+                    Osmangazi ilçesinde doğdum. Küçük bir aileyiz. Annem ev hanımı babam da
                     muhasebeci ayrıca bir de kardeşim var. Annem babam Giresunluyken ben
                     ve kardeşim Bursa'da doğduk.
                     İlk olarak ilkokulu Osmangazi'de Sakarya İlkokulu'nda okuduktan sonra
                     ortaokulda okul değiştirerek Nilüfer'de Karamehmet Ortaokulu'nda okudum.
                     Lise hayatımı ilk 2 yılını devlet okulunda geçirdikten sonra sınava daha
                     iyi hazırlanabilmek için son 2 sene özel okulda eğitimime devam ettim.
-                    Aklımda hiç mühendislik yokken şans mı kader mi demeliyim bilmiyorum 
-                    ama Sakarya Üniversitesi Endüstri Mühendisliği'ni kazandım. Bu bölümde 
-                    şu an 2.sınıfım. Küçük bir iddia sonucunda çap yapma serüvenim de 
-                    başladı bu sırada. Şu an ayrıca Sakarya Üniversitesi Bilgisayar 
+                    Aklımda hiç mühendislik yokken şans mı kader mi demeliyim bilmiyorum
+                    ama Sakarya Üniversitesi Endüstri Mühendisliği'ni kazandım. Bu bölümde
+                    şu an 2.sınıfım. Küçük bir iddia sonucunda çap yapma serüvenim de
+                    başladı bu sırada. Şu an ayrıca Sakarya Üniversitesi Bilgisayar
                     Mühendisliği'ne çap yapıyorum.
                 </p>
-                <button type="submit" class="cv-title">CV</button>
+                <button class="button"><span>Devamı için Tıklayınız.. </span></button>
             </div>
         </div>
     </div>
-    <div class="my-interets">
-        <div class="container-fluid" id="interets">
-            <div class= "row text-center">
-                <div class="">
-                    <h1 class="interets-section"> İlgi Alanlarım</h1>
-                    <p class="paragraph">
-                        Her şeyden çok çabuk sıkılan bir insan olarak tam olarak
-                        ilgi alanlarımı bilmiyorum. Fakat en çok sevdiğim şey yüzmek
-                        sanırım. Küçükken profesyonel olarak yaparken bırakmak
-                        durumunda kalmıştım buna hala üzülüyorum. Resim çok güzel
-                        çizebiliyorum. Fakat bir şeyin başında sürekli oturmayı
-                        sevmediğimden biraz körelmiş durumdayım. Bu yaz farklı resim
-                        tekniklerini denemeyi düşünüyorum. Ayrıca çok üstüne düşmesem de 
-                        manzara fotoğrafları özellikle gökyüzü fotoğrafları çekmeyi çok
-                        seviyorum.
-                    </p>
+    <div class="container-fluid" id="contact">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-lg-6 contact-left">
+                <div class="text-left-block">
+                    <div class="left-center-text">
+                        <div class="left-center-part">
+                            <h2 class="contact-section">İletişim</h2>
+                            <p class="paragraph">
+                                Merhaba benimle iletişime geçebilirsiniz :) <br>
+                                İletişim için <strong>Telefon : </strong>
+                                <a href="#" class="phone-email-link"> 0535 043 11 00 </a>
+                                ya da <strong> Email : </strong>
+                                <a href="#" class="phone-email-link"> feyzaozdmir2@gmail.com </a>
+                            </p>
+
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-lg-12">
+                                    <form action="index.html" id="contact-form" name="contact-form" method="POST"
+                                        data-name="Contact-form">
+                                        <div class="row">
+
+                                            <div class="col-xs-12 col-sm-6 col-lg-6">
+                                                <div class="form-group">
+                                                    <input type="text" id="name" class="form form-control"
+                                                        placeholder="Ad Soyad*" name="name" data-name="Ad Soyad "
+                                                        required>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 col-sm-6 col-lg-6">
+                                                <div class="form-group">
+                                                    <input type="email" id="email" class="form form-control"
+                                                        placeholder="Email*" name="email" data-name="Email" required>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 col-sm-6 col-lg-6">
+                                                <div class="form-group">
+                                                    <input type="text" id="adress" class="form form-control"
+                                                        placeholder="Adres*" name="adress" data-name="Adres" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-lg-6">
+                                                <div class="form-group">
+                                                    <input type="tel" id="phone" class="form form-control"
+                                                        placeholder="Telefon*" name="phone" data-name="Telefon"
+                                                        required>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 col-sm-6 col-lg-6">
+                                                <div class="form-group">
+                                                    <select class="select form-control"
+                                                        aria-label="Default select example">
+                                                        <option selected>Ülkeyi Seçiniz</option>
+                                                        <option value="1">Türkiye</option>
+                                                        <option value="2">Almanya</option>
+                                                        <option value="3">Amerika Birleşik Devletleri</option>
+                                                        <option value="4">Fransa</option>
+                                                        <option value="5">Hollanda</option>
+                                                        <option value="6">İngiltere</option>
+                                                        <option value="7">İsveç</option>
+                                                        <option value="8">İtalya</option>
+                                                        <option value="9">Norveç</option>
+                                                        <option value="10">Polonya</option>
+                                                        <option value="11">Rusya</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 col-sm-6 col-lg-6">
+                                                <div class="form-group">
+                                                    <div class="form-check">
+                                                        <input type="radio" name="gender"> Kadın
+                                                        <input type="radio" name="gender"> Erkek
+                                                        <input type="radio" name="gender"> -
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 col-sm-12 col-lg-12">
+                                                <div class="form-group">
+                                                    <label for="birthday">Doğum Tarihi</label>
+                                                    <input type="date" class="date form-control" id="birthday"
+                                                        class="form form-control" name="birthday">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12 col-sm-12 col-lg-12">
+                                                <div class="form-group">
+                                                    <textarea id="text-aria" class="form textarea form-control"
+                                                        placeholder="Mesajınızı Yazınız.." name="message" data-name="Mesajınız "
+                                                        required>
+
+                                                    </textarea>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="send-clear">
+                                                <button type="submit" onclick="alert('Gönderildi')" id="valid-form"
+                                                    class="send">Gönder</button>
+                                                <button type="reset" id="valid-form" class="clear">Temizle</button>
+                                            </div>
+
+
+
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="col-xs-12 col-sm-6 col-lg-6 contact-right">
+
+            </div>
         </div>
-
     </div>
-    
 
+    
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
