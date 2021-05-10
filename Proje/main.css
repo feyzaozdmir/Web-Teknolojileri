@@ -1,7 +1,4 @@
 
-html{
-    scroll-behavior: smooth;
-}
 .navbar-brand {
     text-shadow: 2px 2px 5px rgb(0, 217, 255);
 }
@@ -116,8 +113,9 @@ a:hover + .line {
     font-size: 11px;
     padding: 10px;
     transition: all 0.5s;
-    cursor: pointer;
+    
     margin-left: 400px;
+    margin-top: 10px;
     
 }
 .button span {
@@ -234,4 +232,5 @@ strong{
 .clear:hover{
     color:rgba(255, 255, 255, 0.651);
 }
+
 
