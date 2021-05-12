@@ -1,0 +1,126 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color:black;
+}
+header{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+.first-title{
+    text-align:justify;
+    margin-top: 20px;
+    padding: 1rem 5rem 2rem 10rem ;
+    font-size: 1.1rem;
+    color: rgb(0, 0, 0);
+    line-height: 1.4;
+    
+}
+.first-title .titles{
+    width: 45%;
+    margin-bottom: 25px;
+    padding: 1rem 6rem 1rem 3rem ;
+    border: 2.5px;
+    border-color: rgb(43, 189, 226);
+    border-bottom-style: double;
+    
+}
+.first-title .intro{
+    margin-bottom: 45px;
+    font-size: 1rem;
+    width: 30%;
+    
+}
+.pic{
+    margin-top: 80px;
+    width: 45%;
+    float: right;
+}
+.title-b .bot{
+    position:absolute;
+    left: 5rem;
+    bottom: -45px;
+    font-weight: 300;
+    font-size: 0.8rem;
+    line-height: 5rem;
+    z-index: 999;
+}
+
+@media (max-width: 991.98px){
+    .first-title .titles{
+        width: 55%;
+        margin-bottom: 25px;
+        border: 2.5px;
+        border-color: rgb(43, 189, 226);
+        border-bottom-style: double;
+        
+    }
+    .first-title .intro{
+        margin-bottom: 45px;
+        font-size: 1rem;
+        width: 30%;
+        
+    }
+    .title-b .bot{
+        position:absolute;
+        left: 5rem;
+        bottom: -45px;
+        font-weight: 300;
+        font-size: 0.8rem;
+        line-height: 5rem;
+        z-index: 999;
+    }
+    .pic{
+        float: none;
+        position:absolute;
+        left: 34rem;
+    }
+
+}
+@media (max-width: 576px) { 
+    header{
+        margin-top: 10px;
+        left: 100px;
+        font-size: 18px;
+        position: relative;
+    }
+    .pic{
+        float: none;
+        left: 30%;
+        position:relative;
+        
+    }
+    .first-title .titles{
+        width: 150%;
+        margin-bottom: 25px;
+        border: 2.5px;
+        border-color: rgb(43, 189, 226);
+        border-bottom-style: double;
+        
+    }
+    .first-title .intro{
+        margin-bottom: 45px;
+        font-size: 1rem;
+        width: 30%;
+        
+    }
+    .first-title .edu{
+        width: 120%;
+    }
+    .title-b .bot{
+        position:relative;
+        width: 100%;
+        left: 10rem;
+        bottom: -35px;
+        font-weight: 300;
+        font-size: 0.8rem;
+        line-height: 2rem;
+        z-index: 999;
+    }
+}
