@@ -1,0 +1,105 @@
+.navbar-brand {
+    text-shadow: 2px 2px 5px rgb(25, 0, 255);
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color:rgba(27, 148, 45, 0.815);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    color: aliceblue;
+    
+}
+.line{
+    width: 0px;
+    height: 3px;
+    background-color: #000000;
+    visibility: hidden;
+    transition: all 0.5s ease;
+}
+a:hover + .line {
+    width:100%;
+    visibility: visible;
+}
+.header-background{
+    position: static;
+    display: block;
+    overflow: visible;
+    top: 0;
+    height: auto;
+    min-height: 750px;  
+    padding-bottom: 70px;
+
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, .7),rgba(0, 0, 0, .7)), url(1/6.jpg);
+    background-size: auto, cover;
+    flex-direction: column;
+    white-space: normal;
+    background-position:0px 0px, 100% 50% ;
+    object-fit: normal;
+    -ms-flex-direction: column;
+    
+}
+.sticky-nav{
+    position: sticky;
+    top: 0px;
+    padding: 20px;
+    z-index: 1;
+    
+    -ms-flex-item-align: auto;
+    -ms-grid-row-align: auto;
+    align-self: auto;
+    -ms-flex-order: 0;
+    order:0;
+    
+}
+.navbar-toggler{
+    border: none;
+    padding: 10px 6px;
+    outline: none;
+}
+.btn{
+    background-color: rgba(39, 145, 53, 0.3);
+    color:aliceblue;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 4px 4.5px;
+    
+}
+.btn:hover{
+    background-color: rgba(2, 209, 30, 0.9);
+    color: aliceblue;
+}   
+.heading {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1.4;
+    text-align: center;
+    color: aliceblue;
+    margin-top: 180px;
+    margin-bottom: 8px;
+    min-height: 100px;
+}
+.heritage .paragraph{
+    margin-top: 30px;
+    padding: 2rem 6rem 1rem 6rem ;
+    font-size: 1.2rem;
+    color: aliceblue;
+    line-height: 1.4;
+    text-align: justify;
+}
+.list{
+    padding: 1rem 6rem 1rem 6rem ;
+    font-size: 1.2rem;
+    color: aliceblue;
+    line-height: 1.4;
+    text-align:justify;
+}
+.list a{
+    color: aliceblue;
+}
+.heritage .pic{
+    margin-top: 15px;
+    padding: 1rem 6rem 1rem 6rem ;
+    text-align: center;
+}
