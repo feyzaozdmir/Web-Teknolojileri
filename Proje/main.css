@@ -37,7 +37,6 @@ a:hover + .line {
     flex-direction: column;
     white-space: normal;
     background-position:0px 0px, 100% 50% ;
-    object-fit: normal;
     -ms-flex-direction: column;
     
 }
@@ -115,7 +114,6 @@ a:hover + .line {
     
     margin-left: 400px;
     margin-top: 10px;
-    
 }
 .button span {
     cursor: pointer;
@@ -231,5 +229,119 @@ strong{
 .clear:hover{
     color:rgba(255, 255, 255, 0.651);
 }
-
-
+div {
+    border-style: dashed;
+}
+@media screen and (max-width: 1160px){
+    .button {
+        font-size: 11px;
+        padding: 8px;        
+        margin-left: 300px;
+        margin-top: 5px;  
+    }
+    .column-right .paragraph{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 950px){
+    .button {
+        font-size: 10px;
+        padding: 6px;        
+        margin-left: 250px;
+        margin-top: 3px;  
+    }
+    .column-right .paragraph{
+        padding: 1rem 4.5rem 1rem 4.5rem ;
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 820px){
+    .button {
+        font-size: 9px;
+        padding: 5px;        
+        margin-left: 200px;
+        margin-top: 2px;  
+    }
+    .column-right .paragraph{
+        padding: .7rem 3.5rem .7rem 3.5rem ;
+        font-size: 1rem;
+    }
+    .clear{
+        margin-top: 1rem;
+        font-size: 12px;
+        padding: 12px;
+    }
+    .send{
+        margin-top: 1rem;
+        font-size: 12px;
+        padding: 12px;
+    }
+    #contact-form .form-check{
+        color:rgb(0, 0, 0);
+        padding: 1rem 0rem 1rem 0rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+}
+@media screen and (max-width: 770px){
+    .column-right .section-title{
+        padding: 3rem 2rem 0rem 3rem;
+        font-size: 2.7rem;
+    }
+    .column-right .paragraph{
+        padding: .7rem 3rem .7rem 3rem ;
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 700px){
+    .button {
+        font-size: 9px;
+        padding: 3px;        
+        margin-left: 150px;
+        margin-top: 1px;  
+    }
+    .column-right .paragraph{
+        padding: .6rem 3rem .6rem 3rem ;
+        font-size: 1rem;
+    }
+    .clear{
+        font-size: 12px;
+        padding: 10px;
+    }
+    .send{
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 570px){
+    .button {
+        font-size: 10px;
+        padding: 6px;       
+        margin-left: 300px;
+        margin-top: 6px;
+    }
+}
+@media screen and (max-width: 460px){
+    .button {
+        font-size: 9px;
+        padding: 5px;       
+        margin-left: 250px;
+        margin-top: 4px;
+    }
+}
+@media screen and (max-width: 400px){
+    .button {
+        font-size: 8px;
+        padding: 5px;       
+        margin-left: 200px;
+        margin-top: 4px;
+    }
+    .column-right .paragraph{
+        padding: .5rem 2.5rem .5rem 2.5rem ;
+        font-size: .9rem;
+    }
+    .column-right .section-title{
+        padding: 2.5rem 2rem 0rem 2.5rem;
+        font-size: 2.7rem;
+    }
+}

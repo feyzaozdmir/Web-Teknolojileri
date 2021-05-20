@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <!--Style Css-->
@@ -15,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script type="text/javascript" src="js/bootstrap.js"></script>
 
     <title>G201210402</title>
 </head>
@@ -24,7 +26,7 @@
         <div id="nav" class="sticky-nav">
             <nav class="navbar  navbar-expand-lg navbar-dark" style="background-color:rgba(89, 0, 255, 0.3);">
                 <div class="container">
-                    <a class="navbar-brand" href="#">Web Teknolojileri Proje Ödevi</a>
+                    <a class="navbar-brand" href="#">Web Teknolojileri Projesi</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -69,57 +71,101 @@
     </div>
 
     <div class="container-fluid" id="favv">
-        <div class="row">
-            <div class="metin">
-                <h1 class="section-title">Spor</h1>
-                <p class="paragraph">
-                    Sporla tanışmam sanırım 2. sınıfta basketbol ile oldu. Fakat asla ilgimi
-                    çekmedi. Zaten 1 ay olmadan bırakmıştım. Daha sonra babam yüzmeyi öğrenmemiz
-                    için bizi yüzme kursuna götürdü. Fiziğim ve iyi yüzmem sebebiyle altyapıya
-                    alındım. Bazı antremanlarda o kadar ama o kadar yoruluyordum ki ağlıyordum ama
-                    gerçekten çok sevdiğim için bırakmadım. Bazı olaylardan sonra yüzme serüvenim de
-                    bitmiş oldu.Lise zamanında da voleybol denedim. Onu profesyonel oynamak gibi
-                    bir isteğim olmadı hiç ve o da öylece kaldı.
-                </p>
-                <h1 class="section-title">İzlediklerim</h1>
-                <p class="paragraph">
-                    Biraz odaklanma problemim yüzünden uzun soluklu şeyler izleyemiyorum.Bundan dolayı
-                    genelde film izliyorum.Özellikle sinemaya gitmeye bayılıyorum.Yazın özellikle 
-                    yakın arkadaşlarımızla yapmaktan en çok hoşlandığımız şey akşam-gece sinemaya gitmek.
-                    Film olarak genelde korku,fantastik veya gerilim izliyorum.Fakat kardeşim olduğundan dolayı
-                    galiba animasyon filmleri izlemeyi de çok seviyorum.
-                </p>
-            </div>
-            
-        </div>
+        <div class="metin">
+            <h1 class="section-title">Spor</h1>
+            <p class="paragraph">
+                Sporla tanışmam sanırım 2. sınıfta basketbol ile oldu. Fakat asla ilgimi
+                çekmedi. Zaten 1 ay olmadan bırakmıştım. Daha sonra babam yüzmeyi öğrenmemiz
+                için bizi yüzme kursuna götürdü. Fiziğim ve iyi yüzmem sebebiyle altyapıya
+                alındım. Bazı antremanlarda o kadar ama o kadar yoruluyordum ki ağlıyordum ama
+                gerçekten çok sevdiğim için bırakmadım. Bazı olaylardan sonra yüzme serüvenim de
+                bitmiş oldu.Lise zamanında da voleybol denedim. Onu profesyonel oynamak gibi
+                bir isteğim olmadı hiç ve o da öylece kaldı.
+            </p>
+            <h1 class="section-title">İzlediklerim</h1>
+            <p class="paragraph">
+                Biraz odaklanma problemim yüzünden uzun soluklu şeyler izleyemiyorum.Bundan dolayı
+                genelde film izliyorum.Özellikle sinemaya gitmeye bayılıyorum.Yazın özellikle 
+                yakın arkadaşlarımızla yapmaktan en çok hoşlandığımız şey akşam-gece sinemaya gitmek.
+                Film olarak genelde korku,fantastik veya gerilim izliyorum.Fakat kardeşim olduğundan dolayı
+                galiba animasyon filmleri izlemeyi de çok seviyorum.
+            </p>
+        </div>           
     </div>
     <div class="container-fluid">
-        <div class="row">
-                <div class="col">
-                    <div class="player1">
-                        <iframe width="460" height="300"  src="https://www.youtube.com/embed/4SL1iyXJpWM?start=29"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen>
-                    </iframe>
-                    </div>
-                     <p class="paragraph">=Türkiye Yüzme Federasyonun bir videosu=</p>
-                </div>
-                <div class="col">
-                    <div class="player2">
-                        <iframe width="460" height="300" src="https://www.youtube.com/embed/SbXIj2T-_uk"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <p class="paragraph">=En sevdiğim filmlerden bir tanesi=</p>
-                </div>
+        <div class="player1" id="player">
+            <iframe class="videoo" width="650" height="350"  src="https://www.youtube.com/embed/4SL1iyXJpWM?start=29"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+            </iframe>
+            <p class="paragraph">=Türkiye Yüzme Federasyonun bir videosu=</p>
+        </div>
+        <div class="player2" id="player1">
+            <iframe class="videoo" width="650" height="350" src="https://www.youtube.com/embed/SbXIj2T-_uk"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+            <p class="paragraph">=En sevdiğim filmlerden bir tanesi=</p>
         </div>
     </div>
+
+    <script>
+        var tag = document.createElement('script');
+  
+        tag.src = "https://www.youtube.com/embed/4SL1iyXJpWM?start=29";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        var player;
+        function onYouTubeIframeAPIReady() {
+          player = new YT.Player('player', {
+            videoId: '4SL1iyXJpWM&t=29s',
+            playerVars: {
+              'playsinline': 1
+            },
+            events: {
+              'onReady': onPlayerReady,
+              'onStateChange': onPlayerStateChange
+            }
+          });
+        }
+
+        function onPlayerReady(event) {
+          event.target.playVideo();
+        }
+    </script>
+
+    <script>
+        var tag = document.createElement('script');
+  
+        tag.src = "https://www.youtube.com/embed/SbXIj2T-_uk";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        var player;
+        function onYouTubeIframeAPIReady() {
+          player = new YT.Player('player2', {
+            videoId: 'SbXIj2T-_uk',
+            playerVars: {
+              'playsinline': 1
+            },
+            events: {
+              'onReady': onPlayerReady,
+              'onStateChange': onPlayerStateChange
+            }
+          });
+        }
+
+        function onPlayerReady(event) {
+          event.target.playVideo();
+        }
+    </script>
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
-        </script>
+    </script>
+</body>    

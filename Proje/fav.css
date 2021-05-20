@@ -9,8 +9,6 @@ body{
     font-size: 18px;
     line-height: 20px;
     color: aliceblue;
-    
-    
 }
 .line{
     width: 0px;
@@ -53,8 +51,7 @@ a:hover + .line {
     -ms-grid-row-align: auto;
     align-self: auto;
     -ms-flex-order: 0;
-    order:0;
-    
+    order:0; 
 }
 .navbar-toggler{
     border: none;
@@ -67,7 +64,6 @@ a:hover + .line {
     border-radius: 10px;
     font-size: 18px;
     padding: 4px 4.5px;
-    
 }
 .btn:hover{
     background-color: rgba(89, 0, 255, 0.808);
@@ -85,7 +81,7 @@ a:hover + .line {
 }
 .metin .section-title{
     margin-top: 30px;
-    padding: 5rem 2rem 0rem 5rem;
+    padding: 4rem 2rem 0rem 5rem;
     font-size: 2.8rem;
     color: aliceblue;
     font-weight: 500;
@@ -93,22 +89,140 @@ a:hover + .line {
 .metin .paragraph{
     margin-top: 10px;
     padding: 3rem 5rem 1rem 5rem ;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     color: aliceblue;
     line-height: 1.4;
     text-align: justify;
 }
-.col .player1{
+.player1{
     margin-top: 40px;
     padding: 1rem 6rem 2rem 6rem ;
+    font-size: 24px;
 }
-.col .paragraph{
-    padding: 3rem 7rem 2rem 6rem ;
-    font-size: 1rem;
-    color: aliceblue;
-    line-height: 1.3;
-}
-.col .player2{
-    margin-top: 40px;
+.player2{
+    margin-top: 20px;
     padding: 1rem 6rem 2rem 6rem ;
+    font-size: 24px;
+}
+@media screen and (max-width: 800px) {
+    .player1 .videoo{
+        width: 550px;
+    }
+    .player2 .videoo{
+        width: 550px;
+    }
+    
+}
+@media screen and (max-width: 700px){
+    .player1 .videoo{
+        width: 450px;
+        height: 300px;
+    }
+    .player2 .videoo{
+        width: 450px;
+        height: 300px;
+    }
+    .player1{
+        font-size: 20px;
+    }
+    .player2{
+        font-size: 20px;
+    }
+    .metin .paragraph{
+        font-size: 1.1rem;
+    }
+    
+}
+@media screen and (max-width: 600px){
+    .player1 .videoo{
+        width: 370px;
+        height: 300px;
+    }
+    .player2 .videoo{
+        width: 370px;
+        height: 300px;
+    }
+    .player1{
+        font-size: 18px;
+    }
+    .player2{
+        font-size: 18px;
+    }
+    .metin .paragraph{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 500px){
+    .metin .section-title{
+        font-size: 2.4rem;
+    }
+    .player1 .videoo{
+        width: 320px;
+        height: 200px;
+    }
+    .player2 .videoo{
+        width: 320px;
+        height: 200px;
+    }
+    .player1{
+        font-size: 17px;
+    }
+    .player2{
+        font-size: 17px;
+    }
+    .metin .paragraph{
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 460px){
+    .metin .section-title{
+        font-size: 2.2rem;
+        padding: 3rem 2rem 0rem 4rem;
+    }
+    .player1 .videoo{
+        width: 300px;
+        height: 150px;
+    }
+    .player2 .videoo{
+        width: 300px;
+        height: 150px;
+    }
+    .player1{
+        font-size: 14px;
+        padding: 0.5rem 4rem 1rem 5rem ;
+    }
+    .player2{
+        font-size: 14px;
+        padding: 0.5rem 4rem 1rem 5rem ;
+    }
+    .metin .paragraph{
+        font-size: 0.6rem;
+        padding: 2rem 4rem 1rem 4rem ;
+    }
+}
+@media screen and (max-width: 400px){
+    .metin .section-title{
+        font-size: 2rem;
+        padding: 2.5rem 2rem 0rem 3.5rem;
+    }
+    .player1 .videoo{
+        width: 240px;
+        height: 120px;
+    }
+    .player2 .videoo{
+        width: 240px;
+        height: 120px;
+    }
+    .player1{
+        font-size: 12px;
+        padding: 0.5rem 3rem 1rem 4rem ;
+    }
+    .player2{
+        font-size: 12px;
+        padding: 0.5rem 3rem 1rem 4rem ;
+    }
+    .metin .paragraph{
+        font-size: 0.5rem;
+        padding: 1rem 3rem 0.5rem 3rem ;
+    }
 }

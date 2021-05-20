@@ -1,4 +1,3 @@
-
 body{
     margin: 0;
     padding: 0;
@@ -42,6 +41,10 @@ header{
     width: 45%;
     float: right;
 }
+.resim{
+    padding: 1rem 6rem 1rem 3rem ;
+    border: none;
+}
 .title-b .bot{
     position:absolute;
     left: 5rem;
@@ -52,38 +55,43 @@ header{
     z-index: 999;
 }
 
-@media (max-width: 991.98px){
-    .first-title .titles{
-        width: 55%;
-        margin-bottom: 25px;
-        border: 2.5px;
-        border-color: rgb(43, 189, 226);
-        border-bottom-style: double;
-        
+@media screen and (max-width: 1160px) {
+    .resim{
+        max-width: 500px;
+        padding: 1rem 6rem 1rem 3rem ;
+        border: none;
     }
-    .first-title .intro{
-        margin-bottom: 45px;
-        font-size: 1rem;
-        width: 30%;
-        
+    .first-title{
+        text-align:justify;
+        margin-top: 20px;
+        padding: 1rem 5rem 2rem 5rem ;
+        font-size: 1.1rem;
+        color: rgb(0, 0, 0);
+        line-height: 1.4;
     }
     .title-b .bot{
-        position:absolute;
-        left: 5rem;
-        bottom: -45px;
-        font-weight: 300;
-        font-size: 0.8rem;
-        line-height: 5rem;
-        z-index: 999;
+        bottom: -70px;
+    }
+
+    
+}
+@media screen and (max-width: 990px){
+    .resim{
+        width: 400px;
+        padding: 0.6rem 2.4rem 0.6rem 2.4rem ;
+        border: none;
     }
     .pic{
-        float: none;
-        position:absolute;
-        left: 34rem;
+        margin-top: 80px;
+        width: 40%;
+        float: right;
+    }
+    .title-b .bot{
+        bottom: -100px;
     }
 
 }
-@media (max-width: 576px) { 
+@media screen and (max-width: 576px) { 
     header{
         margin-top: 10px;
         left: 100px;
@@ -92,9 +100,18 @@ header{
     }
     .pic{
         float: none;
-        left: 30%;
+        left: 13%;
         position:relative;
-        
+        padding: 0.5rem 1rem 0.5rem 1rem ;
+    }
+    .resim{
+        max-width: 700px;
+        padding: 0.5rem 5rem 0.5rem 5rem ;
+        border: none;
+    }
+    .first-title{
+        padding: 1rem 5rem 1rem 5rem ;
+        border: none;
     }
     .first-title .titles{
         width: 150%;
@@ -106,12 +123,13 @@ header{
     }
     .first-title .intro{
         margin-bottom: 45px;
-        font-size: 1rem;
-        width: 30%;
+        font-size: 1.1rem;
+        width: 150%;
         
     }
     .first-title .edu{
-        width: 120%;
+        width: 140%;
+        font-size: 1.1rem;
     }
     .title-b .bot{
         position:relative;
