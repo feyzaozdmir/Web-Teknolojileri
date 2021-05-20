@@ -72,7 +72,7 @@ a:hover + .line {
     color: aliceblue;
 }   
 .heading {
-    font-size: 50px;
+    font-size: 45px;
     font-weight: bold;
     line-height: 1.4;
     text-align: center;
@@ -82,7 +82,7 @@ a:hover + .line {
     min-height: 100px;
 }
 .paragraph1{
-    padding: 1.5rem 6rem 3rem 6rem ;
+    padding: 1rem 5rem 1rem 5rem ;
     font-size: 25px;
     line-height: 1.4;
     text-align: justify;
@@ -91,25 +91,58 @@ a:hover + .line {
     margin-bottom: 8px;
     min-height: 100px;
 }
-.cityy .paragraph2{
+.paragraph2{
     margin-top: 30px;
-    padding: 3rem 6rem 1.5rem 6rem ;
+    padding: 1rem 3rem 0.2rem 3rem ;
     font-size: 1.2rem;
     color: aliceblue;
     line-height: 1.4;
     text-align: justify;
 }
-.carousel-inner .carousel-item{
-    width: 1200px;
-    height: 671px;
-    left: 70px;
+.sresim{
+    height: 550px;
+
 }
 .paragraph{
     margin-top: 30px;
-    padding: 3rem 6rem 1.5rem 6rem ;
+    padding: 1rem 3rem 0.2rem 3rem ;
     font-size: 1.2rem;
     color: aliceblue;
     line-height: 1.4;
     text-align: justify;
     margin-bottom: 8px;
+}
+@media screen and (max-width: 600px) { 
+    body{
+        font-size: 12px;
+
+    }
+    .paragraph1{
+        padding: 0.2rem 3rem 0.2rem 3rem ;
+        font-size: 15px;
+        line-height: 1.2;
+        text-align: center;
+        color: aliceblue;
+        margin-top: 15px;
+        margin-bottom: 8px;
+        min-height: 20px;
+    }
+    .paragraph2{
+        margin-top: 15px;
+        padding: 0.2rem 2.5rem 0.2rem 2.5rem ;
+        font-size: 12px;
+        color: aliceblue;
+        line-height: 1.4;
+        text-align: justify;
+    }
+    .paragraph{
+        margin-top: 15px;
+        padding: 0.2rem 2.5rem 0.2rem 2.5rem ;
+        font-size: 12px;
+        color: aliceblue;
+        line-height: 1.4;
+        text-align: justify;
+        margin-bottom: 8px;
+    }
+
 }

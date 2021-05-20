@@ -71,7 +71,7 @@ a:hover + .line {
     color: aliceblue;
 }   
 .heading {
-    font-size: 50px;
+    font-size: 45px;
     font-weight: bold;
     line-height: 1.4;
     text-align: center;
@@ -97,9 +97,113 @@ a:hover + .line {
 }
 .list a{
     color: aliceblue;
+    border-width: 50px;
 }
 .heritage .pic{
     margin-top: 15px;
     padding: 1rem 6rem 1rem 6rem ;
     text-align: center;
+}
+@media screen and (max-width: 425px) {
+    .container{
+        font-size: 1.8rem;
+    }
+    .resim{
+        width: 200px;
+    }
+    .heritage .paragraph{
+        margin-top: 30px;
+        padding: 0.2rem 3rem 0.2rem 3rem ;
+        font-size: 0.8rem;
+        color:aliceblue;
+        line-height: 1.4;
+        text-align: justify;
+    }
+    .heritage .pic{
+        margin-top: 15px;
+        padding: 0.2rem 3rem 0.2rem 3rem ;
+        text-align:left;
+    }
+    .list{
+        padding: 0.2rem 3rem 0.2rem 3rem ;
+        font-size: 0.8rem;
+        color: aliceblue;
+        line-height: 1.4;
+        text-align:justify;
+    }
+    .list a{
+        color: aliceblue;
+        border-width: 50px;
+    }
+
+}
+@media screen and (min-width: 425px) {
+    .container{
+        font-size: 1.8rem;
+    }
+    .resim{
+        width: 350px;
+    }
+    .heritage .paragraph{
+        margin-top: 30px;
+        padding: 0.2rem 3rem 0.2rem 3rem ;
+        font-size: 1rem;
+        color:aliceblue;
+        line-height: 1.4;
+        text-align: justify;
+    }
+    .heritage .pic{
+        margin-top: 15px;
+        padding: 0.2rem 3rem 0.2rem 3rem ;
+        text-align:left;
+    }
+    .list{
+        padding: 0.2rem 3rem 0.2rem 3rem ;
+        font-size: 1rem;
+        color: aliceblue;
+        line-height: 1.4;
+        text-align:justify;
+    }
+    .list a{
+        color: aliceblue;
+        border-width: 50px;
+    }
+
+}
+@media screen and (min-width: 768px){
+    .resim{
+        width: 450px;
+    }
+}
+@media screen and (min-width: 960px){
+    .container{
+        font-size: 1rem;
+    }
+    .resim{
+        width: 700px;
+    }
+    .heritage .paragraph{
+        margin-top: 30px;
+        padding: 2rem 6rem 1rem 6rem ;
+        font-size: 1.2rem;
+        color: aliceblue;
+        line-height: 1.4;
+        text-align: justify;
+    }
+    .list{
+        padding: 1rem 6rem 1rem 6rem ;
+        font-size: 1.2rem;
+        color: aliceblue;
+        line-height: 1.4;
+        text-align:justify;
+    }
+    .list a{
+        color: aliceblue;
+        border-width: 50px;
+    }
+    .heritage .pic{
+        margin-top: 15px;
+        padding: 1rem 6rem 1rem 6rem ;
+        text-align: center;
+    }
 }
