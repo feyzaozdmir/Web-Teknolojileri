@@ -229,9 +229,7 @@ strong{
 .clear:hover{
     color:rgba(255, 255, 255, 0.651);
 }
-div {
-    border-style: dashed;
-}
+
 @media screen and (max-width: 1160px){
     .button {
         font-size: 11px;

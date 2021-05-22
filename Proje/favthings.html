@@ -16,8 +16,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-
     <title>G201210402</title>
 </head>
 
@@ -85,87 +83,76 @@
             <h1 class="section-title">İzlediklerim</h1>
             <p class="paragraph">
                 Biraz odaklanma problemim yüzünden uzun soluklu şeyler izleyemiyorum.Bundan dolayı
-                genelde film izliyorum.Özellikle sinemaya gitmeye bayılıyorum.Yazın özellikle 
+                genelde film izliyorum.Özellikle sinemaya gitmeye bayılıyorum.Yazın özellikle
                 yakın arkadaşlarımızla yapmaktan en çok hoşlandığımız şey akşam-gece sinemaya gitmek.
                 Film olarak genelde korku,fantastik veya gerilim izliyorum.Fakat kardeşim olduğundan dolayı
                 galiba animasyon filmleri izlemeyi de çok seviyorum.
             </p>
-        </div>           
+        </div>
     </div>
     <div class="container-fluid">
-        <div class="player1" id="player">
-            <iframe class="videoo" width="650" height="350"  src="https://www.youtube.com/embed/4SL1iyXJpWM?start=29"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-            </iframe>
-            <p class="paragraph">=Türkiye Yüzme Federasyonun bir videosu=</p>
-        </div>
-        <div class="player2" id="player1">
-            <iframe class="videoo" width="650" height="350" src="https://www.youtube.com/embed/SbXIj2T-_uk"
+        <div class="player1">
+            <iframe class="videoo" width="650" height="350" src="https://www.youtube.com/embed/4SL1iyXJpWM?start=29"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
             </iframe>
-            <p class="paragraph">=En sevdiğim filmlerden bir tanesi=</p>
+        </div>
+        
+        <div class="player2" id="player2">
+            <iframe class="videoo" src="https://www.youtube.com/embed/SbXIj2T-_uk"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
         </div>
     </div>
 
+    
+
     <script>
         var tag = document.createElement('script');
-  
-        tag.src = "https://www.youtube.com/embed/4SL1iyXJpWM?start=29";
+
+        tag.src = "https://www.youtube.com/iframe_api";
         var firstScriptTag = document.getElementsByTagName('script')[0];
         firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
         var player;
         function onYouTubeIframeAPIReady() {
-          player = new YT.Player('player', {
-            videoId: '4SL1iyXJpWM&t=29s',
-            playerVars: {
-              'playsinline': 1
-            },
-            events: {
-              'onReady': onPlayerReady,
-              'onStateChange': onPlayerStateChange
-            }
-          });
+            player = new YT.Player('player2', {
+                width: '300',
+                heigth: '50',
+                videoId: 'SbXIj2T-_uk',
+                playerVars: {
+                    'playsinline': 1
+                },
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
+                }
+            });
         }
 
         function onPlayerReady(event) {
-          event.target.playVideo();
+            event.target.playVideo();
         }
-    </script>
-
-    <script>
-        var tag = document.createElement('script');
-  
-        tag.src = "https://www.youtube.com/embed/SbXIj2T-_uk";
-        var firstScriptTag = document.getElementsByTagName('script')[0];
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-        var player;
-        function onYouTubeIframeAPIReady() {
-          player = new YT.Player('player2', {
-            videoId: 'SbXIj2T-_uk',
-            playerVars: {
-              'playsinline': 1
-            },
-            events: {
-              'onReady': onPlayerReady,
-              'onStateChange': onPlayerStateChange
+        var done = false;
+        function onPlayerStateChange(event) {
+            if (event.data == YT.PlayerState.PLAYING && !done) {
+                setTimeout(stopVideo, 200000);
+                done = true;
             }
-          });
         }
-
-        function onPlayerReady(event) {
-          event.target.playVideo();
+        function stopVideo() {
+            player.stopVideo();
         }
     </script>
+
+    
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
-    </script>
-</body>    
+        </script>
+</body>
